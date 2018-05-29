@@ -1,0 +1,49 @@
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+ 
+td {
+    padding: 15px;
+}
+body{
+    background: rgb(2,0,36);
+    background: -webkit-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -moz-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(to right, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: #003366;
+}    
+
+h2 {
+	color: #111111;
+}
+
+th{
+    padding: 15px;
+    color: #FF0000;
+    
+}
+
+input[type=text] {
+    padding: 0;
+    height: 20px;
+    position: relative;
+    left: 0;
+    outline: none;
+    border: 1px solid #cdcdcd;
+    border-color: rgba(0,0,0,.15);
+    background-color: white;
+    font-size: 14px;
+}
+
+.advancedSearchTextbox {
+    width: 300px;
+    margin-right: -4px;
+}

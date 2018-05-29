@@ -1,0 +1,51 @@
+<html lang="en">
+   <head>
+      <link rel='stylesheet' href='styles.css'>
+      <link rel='stylesheet' href="https://fonts.googleapis.css?family=Open+Sans">
+      <title>CRUD template</title
+   </head>
+   <body style="background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); font-family:Open Sans">
+      <center>
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Steam_logo.svg/2000px-Steam_logo.svg.png" border="0px" 
+               width="400px" height="100px" >
+      </center>
+      <br>
+      <br>
+      <center>
+         <form action='Create.php' method = 'POST'><!--needed to send info to php file !-->
+            <input type='text' placeholder='Game Name' name='Name' class="advancedSearchTextBox">
+            <select id='select' name='Genere'>
+                 <option value="FPS" >FPS</option>
+                 <option value="Strategy" >Strategy</option>
+                 <option value="TPS" >TPS</option>
+                 <option value="MOBA" >MOBA</option>
+                 <option value="Simulation" >Simulation</option>
+                 <option value="Horror" >Horror</option>
+            </select>
+           
+            
+            <input name = 'Create.php' type = 'submit' value = 'Submit Info'>
+			 <!-- 
+           <input name = 'update' type = 'submit' value = 'Update Info'>  
+           <input name = 'del'    type = 'submit' value = 'Delete Info'>!-->
+         </form>
+         Find the genre for the selected game
+         <form action= "Read.php" method = "POST">
+            <input type="text" name="Type1">
+            <button type= "submit" name="submit-search">search</button>
+            <select id='select' name='Type'>
+               <option value="All" >All</option>
+               <option value="FPS" >FPS</option>
+               <option value="Strategy" >Strategy</option>
+               <option value="TPS" >TPS</option>
+               <option value="MOBA" >MOBA</option>
+               <option value="Simulation" >Simulation</option>
+               <option value="Horror" >Horror</option>
+            </select>
+               <p></p>
+            <input name = 'Read.php'   type = 'submit' value = 'Find Info'> 
+            <input name = 'Read.php'   type = 'submit' value = 'Update Info'>
+         </form>
+      </center>
+   </body>
+</html>
